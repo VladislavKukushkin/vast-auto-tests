@@ -1,0 +1,20 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "run-tests": "npx playwright test && npx allure serve allure-results"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.15.1"
+  }
+}
