@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 //test.use({
   //storageState: 'user.json'
 //})
-// Testovii commentarius
+// Testovii commentarius 2
 test('test', async ({ page }) => {
   await page.goto('https://vast-service-admin-client1.smm.rocks/login');
   await page.getByLabel('E-mail').click();
