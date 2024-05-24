@@ -29,14 +29,19 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-  },
+    storageState: "./auth-lk.json",
+    screenshot: "on",
+    video:"on",
+    actionTimeout: 0,
+    },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
-      //storageState: 'playwright/.auth/user.json', 
+      storageState: "./auth-lk.json", 
+      
     },
 
     },
@@ -44,14 +49,14 @@ export default defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'],
-      //storageState: 'playwright/.auth/user.json',
+      storageState: "./auth-lk.json",
      }
     },
 
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'],
-      //storageState: 'playwright/.auth/user.json',
+      storageState: "./auth-lk.json",
       },
     },
 
