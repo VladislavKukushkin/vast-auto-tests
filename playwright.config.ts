@@ -40,8 +40,7 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
-      storageState: "./auth-lk.json", 
-      
+      storageState: './auth-prod-smmpanelka.json',      
     },
 
     },
@@ -49,14 +48,14 @@ export default defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'],
-      storageState: "./auth-lk.json",
+      storageState: './auth-prod-smmpanelka.json',
      }
     },
 
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'],
-      storageState: "./auth-lk.json",
+      storageState: './auth-prod-smmpanelka.json',
       },
     },
 

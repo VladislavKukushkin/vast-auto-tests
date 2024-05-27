@@ -1,0 +1,376 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AOBYsJW_AvP5vmzx6Kf_cma3ilWxx775qZPwz3UIrUc1TNWWMDj78Wc9i7hUXz8-enoE9z3ESWmSSKVmm55IwW4",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1732359432.44735,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "i18n_redirected",
+      "value": "en",
+      "domain": "smmpanelka.com",
+      "path": "/",
+      "expires": 1748343414,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "display_mode_sent",
+      "value": "true",
+      "domain": "smmpanelka.com",
+      "path": "/",
+      "expires": 1751367415.126185,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.744116023.1716807416",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1751367416.479128,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "i",
+      "value": "X51fBnHZGIfcVl6Ml3hQsVKDbubPoF+Bbb1y5CVgjTJscIDkJDHitLjsTTZYGqEuAxeKC2PY02kdrIuR33rEiU84hAY=",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1751367416.775408,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yandexuid",
+      "value": "9956667061716807416",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1751367416.990435,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yashr",
+      "value": "817207521716807416",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1748343416.77553,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bh",
+      "value": "EigiQ2hyb21pdW0iO3Y9IjEyNSIsICJOb3QuQS9CcmFuZCI7dj0iMjQiKgI/MDoJIldpbmRvd3Mi",
+      "domain": "mc.yandex.ru",
+      "path": "/",
+      "expires": 1748343416.775555,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "carrotquest_session",
+      "value": "a8hkx0653wsec3gles4pdelp2ys49lb1",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1716811016,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_uid",
+      "value": "1716807417182900673",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1748343416,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_d",
+      "value": "1716807417",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1748343416,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yabs-sid",
+      "value": "1391937411716807417",
+      "domain": "mc.yandex.ru",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yuidss",
+      "value": "9956667061716807416",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1751367416.9905,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ymex",
+      "value": "2032167417.yrts.1716807417",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1748343416.990527,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "receive-cookie-deprecation",
+      "value": "1",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1748343416.990546,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bh",
+      "value": "EiciQ2hyb21pdW0iO3Y9IjEyNSIsIk5vdC5BL0JyYW5kIjt2PSIyNCIaBSJ4ODYiIg8iMTI1LjAuNjQyMi4yNiIqAj8wOgkiV2luZG93cyJCCCIxNS4wLjAiSgQiNjQiUjgiQ2hyb21pdW0iO3Y9IjEyNS4wLjY0MjIuMjYiLCJOb3QuQS9CcmFuZCI7dj0iMjQuMC4wLjAiIg==",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1748343416.990577,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_isad",
+      "value": "2",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1716879417,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_visorc",
+      "value": "w",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1716809217,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "carrotquest_session_started",
+      "value": "1",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1716811017,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "carrotquest_device_guid",
+      "value": "138aaf0e-0839-4051-96a6-065a81050194",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1751367417.632043,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "carrotquest_uid",
+      "value": "1717143171311340988",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1729767417,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "carrotquest_auth_token",
+      "value": "user.1717143171311340988.58062-9cda029bbae596d7a2f9357bcc.e7acd68d1aec245765815167ce02216ab246655134f1b6da",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1729767417,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "carrotquest_jwt_access",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MTY4MTEwMTgsImlhdCI6MTcxNjgwNzQxOCwianRpIjoiZjRhMjI2NDE1MzlkNDQzOWI1M2U3NjYxMjQ3OTZkOWYiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTcxNjgwNzQxOCwicm9sZXMiOlsidXNlci4kYXBwX2lkOjU4MDYyLiR1c2VyX2lkOjE3MTcxNDMxNzEzMTEzNDA5ODgiXSwiYXBwX2lkIjo1ODA2MiwidXNlcl9pZCI6MTcxNzE0MzE3MTMxMTM0MDk4OH0.c66s8IZZKo-ny38VzAoQDlpegw0fgNQvejLtQ3oNAlU",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1716810718,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "carrotquest_realtime_services_transport",
+      "value": "wss",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_WP1J3XTF4N",
+      "value": "GS1.1.1716807416.1.0.1716807423.53.0.0",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1751367423.229449,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "vast_service_session",
+      "value": "eyJpdiI6IjJPWXFPRkdxV0E2SXFqQTM5bUlIR1E9PSIsInZhbHVlIjoiS0d1eFJvQWhjWlcwR3hRS0EvNk9UeG5xOXg2OHJzNnZWeCtUYTZadk9XMTZsK3VLVW4rZzF0TzgrazlsMzgwcm9nMWVlNkVxclJNa2h0ZWdJc2E4YkRvNjJqK3drSkNKYmFma3lxS1FIdHdMWEtOeTBYalhlUFd6NWRyV1FIT0wiLCJtYWMiOiI1MTlmN2Q2YmVjNmY0MDVhNWE5YWViMDZmZTc2YmY5ZjUzZTA1NGMwYjVjMTVmNDI4NzM3MDEwNGE4MWVkNzQxIiwidGFnIjoiIn0%3D",
+      "domain": "core.smmpanelka.com",
+      "path": "/",
+      "expires": 1716814632.134029,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AUTH_TOKEN",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2NvcmUuc21tcGFuZWxrYS5jb20vbG9naW4iLCJpYXQiOjE3MTY4MDc0MzIsImV4cCI6MTcxOTM5OTQzMiwibmJmIjoxNzE2ODA3NDMyLCJqdGkiOiJEODJoNlViMUw0WGJicGx3Iiwic3ViIjoiNzM3MDg3IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInBhbmVsX2lkIjoiMTQyOSJ9.3Odi4Qlc2k0KnLWXV_GIoJIoDpwpao4H4J8ffUsDECw",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1717412232,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rememberUser",
+      "value": "TestUser",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1717412232,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "onPanelLoggedIn",
+      "value": "TestUser",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1717412232,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rememberEmail",
+      "value": "TestUser@test.com",
+      "domain": ".smmpanelka.com",
+      "path": "/",
+      "expires": 1717412232,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://smmpanelka.com",
+      "localStorage": [
+        {
+          "name": "_ym94770533_lsid",
+          "value": "1214237598555"
+        },
+        {
+          "name": "carrotquest_last_activity",
+          "value": "1716807438"
+        },
+        {
+          "name": "currency",
+          "value": "USD"
+        },
+        {
+          "name": "_ym94770533:0_reqNum",
+          "value": "5"
+        },
+        {
+          "name": "carrotquest_requests",
+          "value": "[]"
+        },
+        {
+          "name": "_ym94770533_lastHit",
+          "value": "1716807431932"
+        },
+        {
+          "name": "_ym_wv2rf:94770533:0",
+          "value": "1"
+        },
+        {
+          "name": "_ym_synced",
+          "value": "{}"
+        },
+        {
+          "name": "drawer-expand-on-hover",
+          "value": "true"
+        },
+        {
+          "name": "_ym_uid",
+          "value": "\"1716807417182900673\""
+        },
+        {
+          "name": "carrotquest_data",
+          "value": "{\"auth_token\":\"user.1717143171311340988.58062-9cda029bbae596d7a2f9357bcc.e7acd68d1aec245765815167ce02216ab246655134f1b6da\",\"user\":{\"id\":\"1717143171311340988\",\"last_admin\":{\"type\":\"default_admin\",\"name\":\"SMM PANELKA\",\"avatar\":\"https://files.carrotquest.app/avatars/default-v3.png\"},\"conversations_unread\":[],\"has_email\":false,\"has_phone\":false,\"has_conversations\":false,\"is_banned\":false,\"country\":\"Ireland\",\"phone_storage_is_allowed\":false,\"email_storage_is_allowed\":false,\"data_processing_policy_is_allowed\":false,\"sdk_push_notifications_subscribed\":true,\"sdk_push_campaigns_subscribed\":true},\"app\":{\"active\":true,\"id\":\"58062\",\"name\":\"SMM PANELKA\",\"interval_until_work_time\":-1,\"settings\":{\"track_emails\":false,\"track_leave_site_attempt\":false,\"terms_of_phone_storage\":\"\",\"terms_of_email_storage\":\"\",\"locale\":\"ru-ru\",\"created\":1693573654,\"data_processing_policy\":false,\"data_processing_policy_url\":null,\"messenger_collapsed_color\":\"fb7025\",\"messenger_name\":\"SMM PANELKA\",\"messenger_avatar\":\"default-v3.png\",\"messenger_avatar_big\":null,\"messenger_position\":\"right_bottom\",\"messenger_collapsed_text\":\"Я тут, если что\",\"messenger_welcome_message\":\"Задайте нам вопрос здесь и мы ответим Вам в течение нескольких минут\",\"messenger_show_kb_link_in_welcome_message\":false,\"messenger_offline_message\":\"Сейчас нет операторов, готовых вам помочь\",\"messenger_online_message\":\"Мы тут и готовы помочь\",\"messenger_show_powered_by\":true,\"messenger_show_privacy_policy\":false,\"messenger_mode\":\"visible\",\"messenger_hide_collapsed\":true,\"messenger_always_show_tooltip\":false,\"messenger_reply_file\":true,\"messenger_vote\":true,\"js_code\":null,\"messenger_show_offline_message\":true,\"messenger_show_allow_cookies\":false,\"messenger_allow_cookies_policy\":null,\"messenger_show_confirm_subscription\":false,\"messenger_confirm_subscription_policy\":null,\"messenger_confirm_subscription_with_checkbox\":false,\"double_opt_in\":false,\"double_opt_in_logo\":\"https://files.carrotquest.app/double-opt-in-logo/default.png\",\"messenger_icon_order\":null,\"messenger_icon_vk_show\":false,\"messenger_icon_vk_text\":\"\",\"messenger_icon_viber_show\":false,\"messenger_icon_viber_text\":\"\",\"messenger_icon_facebook_show\":false,\"messenger_icon_facebook_text\":\"\",\"messenger_icon_telegram_show\":true,\"messenger_icon_telegram_text\":\"smmpanelkabot\",\"messenger_icon_instagram_show\":false,\"messenger_icon_instagram_text\":\"\",\"messenger_icon_whatsapp_show\":false,\"messenger_icon_whatsapp_text\":\"\",\"messenger_sound_popup\":true,\"messenger_sound_part\":true,\"track_phones\":false,\"messenger_indent\":{\"vertical\":25,\"horizontal\":25},\"messenger_collapsed_animations\":[\"smile\",\"winking-smile\",\"vertical-funnel\",\"horizontal-funnel\"],\"messenger_pattern\":\"default\",\"messenger_mobile_indent\":{\"vertical\":100,\"horizontal\":25},\"messenger_theme\":\"dark\",\"messenger_mode_settings\":{\"mobile\":null,\"desktop\":null},\"messenger_enable_new_conversation_button\":false,\"messenger_enable_audio_messages\":true},\"status_operators\":\"online\",\"admins\":[{\"id\":\"127580\",\"name\":\"Sham\",\"avatar\":\"https://files.carrotquest.app/avatars/1714740110542-ar7tewy3.png\",\"type\":\"admin\"},{\"id\":\"120846\",\"name\":\"Лина\",\"avatar\":\"https://files.carrotquest.app/avatars/1708096990698-xawip8uv.png\",\"type\":\"admin\"},{\"id\":\"123767\",\"name\":\"Амина\",\"avatar\":\"https://files.carrotquest.app/avatars/1702381839324-kg99verq.png\",\"type\":\"admin\"},{\"id\":\"123369\",\"name\":\"Amelia\",\"avatar\":\"https://files.carrotquest.app/avatars/1701333880645-p1h6g468.jpeg\",\"type\":\"admin\"},{\"id\":\"123355\",\"name\":\"Beatrice\",\"avatar\":\"https://files.carrotquest.app/avatars/1703689033818-pek7pils.png\",\"type\":\"admin\"},{\"id\":\"120807\",\"name\":\"Катерина\",\"avatar\":\"https://files.carrotquest.app/avatars/1693813711799-martd3i7.jpeg\",\"type\":\"admin\"},{\"id\":\"120843\",\"name\":\"Майя\",\"avatar\":\"https://files.carrotquest.app/avatars/1696752199203-bosvr871.jpeg\",\"type\":\"admin\"}],\"auto_events\":[],\"jsscripts\":[],\"extra_code_integrations\":[]},\"device_guid\":\"138aaf0e-0839-4051-96a6-065a81050194\",\"ip\":\"99.80.49.98\",\"country_code\":\"IE\",\"push_domain\":\"https://app58062.pushgrow.io\",\"knowledge_base_domain\":\"app58062.carrotquest.help\",\"connect_timestamp\":1716807417,\"realtime_services\":{\"transport\":\"nginx-push-stream\",\"channels\":[\"conversation_notify.58062.1717143171311340988\",\"ping\",\"conversation_reply_changed.58062.1717143171311340988\",\"conversation_typing.58062.1717143171311340988\",\"app_online_changed.58062\",\"conversation_parts_batch.58062.1717143171311340988\",\"conversation.58062.1717143171311340988\",\"conversation_reply.58062.1717143171311340988\",\"user_ban.58062.1717143171311340988\",\"message_conversation_started.58062.1717143171311340988\",\"users_removed.58062.1717143171311340988\",\"chat_bot_conversation_finished.58062.1717143171311340988\",\"user_merge_finished.58062.1717143171311340988\",\"conversation_read.58062.1717143171311340988\",\"run_script.58062.1717143171311340988\"],\"hosts\":[\"rts-v2.carrotquest.app\"]}}"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AOBYsJU1MjlOqt6Bvh6NB3jeiA7SPKU2A5juX1Zr3ApSMV3iuHs3E9efW_K_PRI_g5WqDX1zc7-qUheZi5z6qxJihcCjwyqBQW4vEQ"
+        },
+        {
+          "name": "_ym_retryReqs",
+          "value": "{}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "ZHRmeWdvMXhicmQ4ZQ=="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAOBYsJXm_YAgm3TMnwQLr9Eyn9ciJy-Fh_qK9JUb4gbXHtrJB-g2XzBeh8dkcrE9sCup-YM"
+        }
+      ]
+    }
+  ]
+}
