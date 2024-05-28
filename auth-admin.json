@@ -1,0 +1,37 @@
+{
+  "cookies": [
+    {
+      "name": "AUTH_TOKEN",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3Zhc3Qtc2VydmljZTEuc21tLnJvY2tzL2xvZ2luIiwiaWF0IjoxNzE2Mjg1MjE1LCJleHAiOjE3MTg4NzcyMTUsIm5iZiI6MTcxNjI4NTIxNSwianRpIjoiaVNWZnhPc1NiY2Nkc2ZtaiIsInN1YiI6IjY1OTA4MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJwYW5lbF9pZCI6IjEifQ.w7GqOtIHxJpLM4ZoABnyQ8IZSPK7F0prX3cZhzO86bc",
+      "domain": "vast-service-admin-client1.smm.rocks",
+      "path": "/",
+      "expires": 1716890015,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://vast-service-admin-client1.smm.rocks",
+      "localStorage": [
+        {
+          "name": "_pendo_guides_blocked.1ceeadf3-4cab-4014-72bf-4dfe72893cc3",
+          "value": "{\"ttl\":1716299619511,\"value\":\"0\"}"
+        },
+        {
+          "name": "pusherTransportTLS",
+          "value": "{\"timestamp\":1716285223774,\"transport\":\"xhr_streaming\",\"latency\":7382}"
+        },
+        {
+          "name": "_pendo_meta.1ceeadf3-4cab-4014-72bf-4dfe72893cc3",
+          "value": "{\"ttl\":1724925218822,\"value\":3747705562}"
+        },
+        {
+          "name": "_pendo_visitorId.1ceeadf3-4cab-4014-72bf-4dfe72893cc3",
+          "value": "{\"ttl\":1724925218821,\"value\":\"659082\"}"
+        }
+      ]
+    }
+  ]
+}

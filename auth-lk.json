@@ -1,0 +1,116 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AOG1W2XG9ZrzZVxu3mworgj9i01YgeP1wrKdtEvRmoL7USR8hUbXqmq5I_XoCf19gxDUswBBD23tmCzg8XwbeXY",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1731844765.505419,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "i18n_redirected",
+      "value": "ru",
+      "domain": "vast-service-client1.smm.rocks",
+      "path": "/",
+      "expires": 1747828743,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "display_mode_sent",
+      "value": "true",
+      "domain": "vast-service-client1.smm.rocks",
+      "path": "/",
+      "expires": 1750852744.438901,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "vast_service_session",
+      "value": "eyJpdiI6IkE4YlNwQy9NUmtzWlgwRmhQU3MveVE9PSIsInZhbHVlIjoiaUYwUHRFQXQrY3NydG5yUm4vTmFuQkx0Nmw3aFFzQlgrYVYyVU1oU2wyZU9adzhNK0tOa3FTNkRwUUI1YUhpNVY4OGhoc2UybDBIdnByZ3QvWFlrZ0dpOTQzSWl0b2prZytjeEtEdFRTNXNPcmI0VW11S08xU3dLYVI0dWRhSnoiLCJtYWMiOiJlYTJlMWZhMjg0YmEyMGYzNjhlNThkZjRmYTdhYTk1MWU4Y2MyMTExNTQzZmIyMDE5YWRlMjdkNGE3MzU3Mzg5IiwidGFnIjoiIn0%3D",
+      "domain": "vast-service1.smm.rocks",
+      "path": "/",
+      "expires": 1716299965.609831,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AUTH_TOKEN",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3Zhc3Qtc2VydmljZTEuc21tLnJvY2tzL2xvZ2luIiwiaWF0IjoxNzE2MjkyNzY1LCJleHAiOjE3MTg4ODQ3NjUsIm5iZiI6MTcxNjI5Mjc2NSwianRpIjoiZWttaEpxRVJMUmRTYnY1biIsInN1YiI6IjY1OTA4MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJwYW5lbF9pZCI6IjEifQ.D4MBzrFtrnTQlifWZ4jAfo0EpsdZJ8uElXf2gswnrgg",
+      "domain": ".smm.rocks",
+      "path": "/",
+      "expires": 1716897565,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rememberUser",
+      "value": "admin",
+      "domain": ".smm.rocks",
+      "path": "/",
+      "expires": 1716897565,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "onPanelLoggedIn",
+      "value": "admin",
+      "domain": ".smm.rocks",
+      "path": "/",
+      "expires": 1716897565,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rememberEmail",
+      "value": "admin@admin.com",
+      "domain": ".smm.rocks",
+      "path": "/",
+      "expires": 1716897565,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://vast-service-client1.smm.rocks",
+      "localStorage": [
+        {
+          "name": "drawer-expand-on-hover",
+          "value": "true"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AOG1W2WF3vwtgTYhDeFZ0Q3wb_-jDbx6HzXAM3yEr_0_aM4jZAWEWSeru1-etsLAC1tJ2K8oAeFgK914cEsH44G6gnizHbqiXJcO_w"
+        },
+        {
+          "name": "currency",
+          "value": "USD"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "b2Z2aHg3MXY0aGI4eg=="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAOG1W2XteR2_w-lB-hRVrVB2K6d9N73vfM2vDUfYykRU5qPuNWTp90WyDbzfdzPlC2pt47M"
+        }
+      ]
+    }
+  ]
+}
