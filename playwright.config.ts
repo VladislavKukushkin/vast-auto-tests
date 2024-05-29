@@ -1,46 +1,51 @@
-import { defineConfig, devices } from '@playwright/test';
-import { testPlanFilter } from "allure-playwright/dist/testplan";
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
+import test, { PlaywrightTestConfig, defineConfig, devices, expect } from '@playwright/test';
+import { describe } from 'node:test';
+//import { testPlanFilter } from "allure-playwright/dist/testplan";
+import { qase } from 'playwright-qase-reporter';
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
+describe('Test suite', () => {
+  test('Simple test', () => {
+    qase.id(1);
+    qase.title('Example of simple test')
+    expect(true).toBe(true);
+  });
+
+  test('Test with annotated fields', () => {
+    qase.id(2);
+    qase.fields({ 'severity': 'high', 'priority': 'medium' })
+    expect(true).toBe(true);
+  });
+
+  test(qase(2, 'This syntax is still supported'), () => {
+    expect(true).toBe(true);
+  });
+});
+
 export default defineConfig({
   testDir: './tests',
-  /* Run tests in files in parallel */
-  fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  grep: testPlanFilter(),
-  reporter: [["line"], ["allure-playwright"]],
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+  fullyParallel: true,
+
+  forbidOnly: !!process.env.CI,
+
+  retries: process.env.CI ? 2 : 0,
+
+  workers: process.env.CI ? 1 : undefined,
+
+  //grep: testPlanFilter(),
+  use: {
     trace: 'on-first-retry',
     storageState: "./auth-lk.json",
     screenshot: "on",
     video:"on",
     actionTimeout: 0,
     },
-
-  /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
-      storageState: './auth-prod-smmpanelka.json',      
+      storageState: "./auth-lk.json", 
+      
     },
 
     },
@@ -48,43 +53,33 @@ export default defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'],
-      storageState: './auth-prod-smmpanelka.json',
+      storageState: "./auth-lk.json",
      }
     },
 
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'],
-      storageState: './auth-prod-smmpanelka.json',
+      storageState: "./auth-lk.json",
       },
     },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
   ],
 
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
   
 });
+const config: PlaywrightTestConfig = {
+  reporter: [
+    ['list'],
+    ['playwright-qase-reporter',
+        {
+            apiToken: '65f07f630ba4928f3b9dfec902b155b7587609b2141a7b9f5376bb1c7b87eef7',
+            projectCode: 'DEMO',
+            basePath: 'https://api.qase.io/v1',
+            uploadAttachments: true,
+            runComplete: true,
+            logging: true,
+            rootSuiteTitle: 'Playwright tests',
+            environmentId: '1'
+        }],
+      ],};
+      module.exports = config;
