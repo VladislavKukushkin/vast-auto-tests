@@ -1,11 +1,14 @@
-import { PlaywrightTestConfig, devices } from '@playwright/test';
+import { defineConfig, devices,  } from '@playwright/test';
+import { testPlanFilter } from "allure-playwright/dist/testplan";
 
-const config: PlaywrightTestConfig = {
+export default defineConfig ({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
+  grep: testPlanFilter(),
+  reporter: [["line"], ["allure-playwright"]],
   use: {
     trace: 'on-first-retry',
     storageState: "./auth-lk.json",
@@ -33,26 +36,4 @@ const config: PlaywrightTestConfig = {
       },
     },
   ],
-  reporter: [
-    ['list'],
-    [
-      'playwright-qase-reporter',
-      {
-        debug: true,
-        testops: {
-          api: {
-            token: '65f07f630ba4928f3b9dfec902b155b7587609b2141a7b9f5376bb1c7b87eef7',
-          },
-          project: 'DEMO',
-          uploadAttachments: true,
-          logging: true,
-          run: {
-            complete: true,
-          },
-        },
-      },
-    ],
-  ],
-};
-
-export default config;
+});
