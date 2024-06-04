@@ -3,7 +3,7 @@ import { testPlanFilter } from "allure-playwright/dist/testplan";
 
 export default defineConfig ({
   testDir: './tests',
-  fullyParallel: true,
+  fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
@@ -21,18 +21,21 @@ export default defineConfig ({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
+        actionTimeout: 0,
       },
     },
     {
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
+        actionTimeout: 0,
       },
     },
     {
       name: 'webkit',
       use: {
         ...devices['Desktop Safari'],
+        actionTimeout: 0,
       },
     },
   ],
