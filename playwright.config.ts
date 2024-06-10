@@ -22,9 +22,9 @@ export default defineConfig ({
       use: {
         ...devices['Desktop Chrome'],
         actionTimeout: 0,
-      },
+      }, 
     },
-    {
+       {
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
