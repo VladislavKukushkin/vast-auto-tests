@@ -1,18 +1,18 @@
-import { test, expect, defineConfig } from '@playwright/test';
-test.use({colorScheme: 'dark'})
+import { test, expect, } from '@playwright/test';
 test('test', async ({ page }) => {
     await page.goto('https://smmpanelka.com/app/login');
-    await page.getByLabel('E-mail').click();
-    await page.getByLabel('E-mail').fill('TestUser@test.com');
-    await page.getByLabel('Password').click();
-    await page.getByLabel('Password').fill('TestUser');
-    await page.getByLabel('Password').press('Enter');
-    await page.waitForTimeout(10000);
+        await page.waitForTimeout(5000);
+    
+    await expect(page.locator('#app > div > div.fill-height.position-relative > div > header')).toHaveCSS(
+        'background-color',
+        "rgb(255, 255, 255)"
+    );
 
-        await page.locator('#app > div > div.fill-height.position-relative > div > header');
-
-
-    await page.goto('https://smmpanelka.com/app/login?redirect=/add-funds&query={}');
-    await page.goto('https://smmpanelka.com/app/login?redirect=%2Fadd-funds&query=%7B%7D');
-    await page.waitForTimeout(5000);
+    await expect(page.getByRole('banner').locator('i')).toBeVisible();
+    await page.getByRole('banner').locator('i').click();
+    
+    await expect(page.locator('#app > div > div.fill-height.position-relative > div > header')).toHaveCSS(
+        'background-color',
+        'rgb(19, 19, 19)'
+    );
   });
