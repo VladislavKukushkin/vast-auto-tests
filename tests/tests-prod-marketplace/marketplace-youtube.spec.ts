@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { log } from 'console';
+import { text } from 'stream/consumers';
 
 test.setTimeout(120000);
 
@@ -144,24 +145,25 @@ log(youtubeAdWordsSecond)
 
   await expect(page.getByRole('link', { name: 'Youtube CTR Views 󱦰' })).toBeVisible({ timeout: 0 });
   await expect(page.getByRole('link', { name: 'ID 134405 CTR on Youtube' })).toBeVisible({ timeout: 0 });
-        const youtubeCtrViews = await page.textContent('#rootElement > div.pb-4.light__them > div > div:nth-child(15) > div > div > a > div.service-card__body > div.service-card__content > div.d-flex.justify-center.mb-4 > span');
+        const youtubeCtrViews = await page.textContent('#rootElement > div.pb-4.light__them > div > div:nth-child(13) > div > div > a > div.service-card__body > div.service-card__content > div.d-flex.justify-center.mb-4 > span');
   await expect(youtubeCtrViews).toContain('CTR on Youtube');
 log(youtubeCtrViews)
 
   await expect(page.getByRole('link', { name: 'Youtube Community Likes 󱦰' })).toBeVisible({ timeout: 0 });
   await expect(page.getByRole('link', { name: 'ID 157361 Youtube Community' })).toBeVisible({ timeout: 0 });
-        const youtubeCommunityLikes = await page.textContent('#rootElement > div.pb-4.light__them > div > div:nth-child(16) > div > div > a > div.service-card__body > div.service-card__content > div.d-flex.justify-center.mb-4 > span.black--text.service-card__title.text-center.text-uppercase.dark--text');
+        const youtubeCommunityLikes = await page.textContent('#rootElement > div.pb-4.light__them > div > div:nth-child(15) > div > div > a > div.service-card__body > div.service-card__content > div.d-flex.justify-center.mb-4 > span.black--text.service-card__title.text-center.text-uppercase.dark--text');
   await expect(youtubeCommunityLikes).toContain('Youtube Community');
 log(youtubeCommunityLikes)
 
   await expect(page.getByRole('link', { name: 'Youtube Channel/Video' })).toBeVisible({ timeout: 0 });
   await expect(page.getByRole('link', { name: 'ID 134419 YouTube Channel' })).toBeVisible({ timeout: 0 });
-        const youtubeChannelFirst = await page.textContent('#rootElement > div.pb-4.light__them > div > div:nth-child(17) > div > div > a:nth-child(1) > div.service-card__body > div.service-card__content > div.d-flex.justify-center.mb-4 > span');
+        const youtubeChannelFirst = await page.textContent('#rootElement > div.pb-4.light__them > div > div:nth-child(16) > div > div > a:nth-child(1) > div.service-card__body > div.service-card__content > div.d-flex.justify-center.mb-4 > span');
   await expect(youtubeChannelFirst).toContain('YouTube Channel');
   log(youtubeChannelFirst)
 
   await expect(page.getByRole('link', { name: 'ID 134420 YouTube Video' })).toBeVisible({ timeout: 0 });
-         const youtubeChannelSecond = await page.textContent('#rootElement > div.pb-4.light__them > div > div:nth-child(17) > div > div > a:nth-child(2) > div.service-card__body > div.service-card__content > div.d-flex.justify-center.mb-4 > span');
+         const youtubeChannelSecond = await page.textContent('#rootElement > div.pb-4.light__them > div > div:nth-child(16) > div > div > a:nth-child(2) > div.service-card__body > div.service-card__content > div.d-flex.justify-center.mb-4 > span');
   await expect(youtubeChannelSecond).toContain('YouTube Video');
   log(youtubeChannelSecond)
+
 });
