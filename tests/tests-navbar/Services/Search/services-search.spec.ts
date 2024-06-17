@@ -1,6 +1,4 @@
 import { test, expect } from '@playwright/test';
-import {log } from 'console';
-import exp from 'constants';
 
 test('test', async ({ page }) => {
   
@@ -9,7 +7,15 @@ const vk = 'VK' ;
 
 await page.goto('https://smmpanelka.com/app/login');
 await page.getByRole('button', { name: 'Services' }).click();
-await page.locator('#searchNetwork').fill('Likee');
-const searchResult = await expect(allServicesList).toContainText('VK');
-searchResult == true ? log('search vk - true') : log('search vk net nixya')
+await page.locator('#searchNetwork').fill('VK');
+await page.waitForTimeout(2000)
+
+  const isVKPresent = await allServicesList.locator(`text=${vk}`).count() > 0;
+
+  if (isVKPresent) {
+    console.log('search vk - true');
+  } else {
+    console.log('search vk net nixya');
+  }
+  expect(isVKPresent).toBe(true);
   });
