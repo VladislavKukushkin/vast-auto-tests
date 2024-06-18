@@ -12,8 +12,8 @@ export default defineConfig ({
   use: {
     trace: 'on-first-retry',
     storageState: "./auth-lk.json",
-    screenshot: "on",
-    video: "on",
+    screenshot: "only-on-failure",
+    video: "retain-on-failure",
     actionTimeout: 0,
   },
   projects: [
