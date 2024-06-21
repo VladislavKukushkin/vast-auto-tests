@@ -35,10 +35,10 @@ test('test', async ({ page }) => {
     await page.locator('#input-46').fill(password);
     await page.waitForTimeout(2000);
     await page.locator('xpath=/html/body/div[1]/div/div/div/div/div[9]/main/div/div[2]/div/div/div/div/form/div[1]/div/div').click();
-    await page.waitForTimeout(10000);
+    await page.waitForTimeout(15000);
     
     await page.goto('https://smmpanelka.com/app/profile');
-    await page.waitForTimeout(5000)
+    await page.waitForURL('https://smmpanelka.com/app/profile')
     await expect (page.getByText(username)).toBeVisible();
     console.log('Registration successefully completed', username, email, password );
 })
