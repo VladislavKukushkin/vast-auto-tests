@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { log } from 'console';
+
 test.setTimeout(1000000)
+
 test('test', async ({ page }) => {
   await page.goto('https://smmpanelka.com/app/?networkId=1');
   await expect(page.locator('#rootElement').getByText('Youtube', { exact: true })).toBeVisible();
