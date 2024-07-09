@@ -9,10 +9,17 @@ function getRandomString(length) {
   return result;
 }
 
+//export 
 const randomName = getRandomString(4);
+console.log("Created service name = ", randomName);
 
-test('has title', async ({ page }) => {
-  await page.goto('http://localhost:8080/login');
+
+
+test('Creating new service', async ({ page }) => {
+  
+  test.setTimeout(0);
+
+  await page.goto('https://vast-service-admin-client1.smm.rocks/login');
   await page.waitForTimeout(1000);
   await page.getByLabel('E-mail').fill('admin@admin.com');
   await page.getByLabel('Password').fill('admin@admin.com');
@@ -55,4 +62,33 @@ test('has title', async ({ page }) => {
   await page.locator('#app > div > main > div > div > div.mx-auto.v-card.v-sheet.theme--light > div.v-card__title > button.v-btn.v-btn--is-elevated.v-btn--has-bg.theme--light.v-size--default.primary')
   .click();
   await page.waitForTimeout(100000)
+
+  await page.goto('https://vast-service-client1.smm.rocks/login');
+  await page.getByLabel('E-mail').fill('admin@admin.com');
+  await page.waitForTimeout(1000);
+  await page.getByLabel('Password').fill('admin@admin.com');
+  await page.waitForTimeout(1000);
+  await page.getByLabel('Password').press('Enter');
+  await page.waitForTimeout(2000);
+  
+  await page.goto('https://vast-service-client1.smm.rocks/?networkId=1');
+  await page.waitForTimeout(2000);
+  await page.locator('#rootElement > div.pb-4.light__them > div > div:nth-child(3) > a').click();
+  await page.waitForTimeout(4000);
+  await page.goto('https://vast-service-client1.smm.rocks/buy-youtube-views');
+  await page.locator('#app > div.v-application--wrap > div.fill-height.position-relative > main > div > div.py-3.background.full-height > div > div > div > div.v-card__text.pa-md-8.pt-md-6 > div.layout.pa-3.justify-end.pb-8.pb-md-4 > nav > ul > li:nth-child(8) > button')
+    .click();
+  await page.locator('#app > div > div.fill-height.position-relative > main > div > div.py-3.background.full-height > div > div > div > div.v-card__text.pa-md-8.pt-md-6 > div.layout.pa-3.justify-end.pb-8.pb-md-4 > nav > ul')
+    .last().click();
+  await page.waitForTimeout(5000)
+  await page.locator('#app > div > div.fill-height.position-relative > main > div > div.py-3.background.full-height > div > div > div > div.v-card__text.pa-md-8.pt-md-6 > div.layout.pa-3.justify-end.pb-8.pb-md-4 > nav > ul')
+    .first().click();
+  await page.waitForTimeout(10000);
+  await expect(page.getByText(randomName)).toBeVisible();
+  await page.getByText(randomName).click();
+  await expect(page.getByText(randomName)).toBeVisible();
+  await page.waitForTimeout(1000)
+
+  console.log('Service was created successfully on Admin site and shown on LK')
+
 });

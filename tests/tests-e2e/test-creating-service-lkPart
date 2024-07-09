@@ -1,0 +1,26 @@
+// import { test, expect } from '@playwright/test';
+
+// test('Service to be visible and can be bought', async ({ page }) => {
+ 
+//     await page.goto('https://vast-service-client1.smm.rocks/login');
+//     await page.getByLabel('E-mail').fill('admin@admin.com');
+//     await page.waitForTimeout(1000);
+//     await page.getByLabel('Password').fill('admin@admin.com');
+//     await page.waitForTimeout(1000);
+//     await page.getByLabel('Password').press('Enter');
+//     await page.waitForTimeout(2000);
+    
+//     await page.goto('https://vast-service-client1.smm.rocks/?networkId=1');
+//     await page.waitForTimeout(2000);
+//     await page.locator('#rootElement > div.pb-4.light__them > div > div:nth-child(3) > a').click();
+//     await page.waitForTimeout(4000);
+//     await page.goto('https://vast-service-client1.smm.rocks/buy-youtube-views');
+//     await page.locator('#app > div.v-application--wrap > div.fill-height.position-relative > main > div > div.py-3.background.full-height > div > div > div > div.v-card__text.pa-md-8.pt-md-6 > div.layout.pa-3.justify-end.pb-8.pb-md-4 > nav > ul > li:nth-child(8) > button')
+//                         .click();
+//     await expect(page.getByText(randomName)).toBeVisible();
+//     await page.getByText('Buy now').last().click();
+
+
+
+
+// });
