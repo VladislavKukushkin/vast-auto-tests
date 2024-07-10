@@ -1,10 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-test.use({
-    storageState: 'auth-prod-smmpanelka.json',
-    actionTimeout: 0,
-  })
-
 test('test', async ({ page }) => {
     await page.goto('https://smmpanelka.com/app/login');
     await page.getByLabel('E-mail').click();

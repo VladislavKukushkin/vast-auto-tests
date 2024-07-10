@@ -1,13 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { log } from 'console';
-import { text } from 'stream/consumers';
 
-test.setTimeout(120000);
-
-test.use({
-  storageState: 'auth-prod-smmpanelka.json',
-  actionTimeout: 0,
-})
+test.setTimeout(0);
 
 test('test', async ({ page }) => {
   await page.goto('https://smmpanelka.com/app/?networkId=1');
