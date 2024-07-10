@@ -19,7 +19,8 @@
     "smmpanelka": "npx playwright test tests-prod-smmpanelka",
     "auth-reg": "npx playwright test autharization-registration",
     "orders": "npx playwright test orders",
-    "smmpanelka-marketplace": "npx playwright test tests-smmpanelka-marketplace"
+    "smmpanelka-marketplace": "npx playwright test tests-smmpanelka-marketplace",
+    "allure-result": "npx allure serve allure-results"
   },
   "keywords": [],
   "author": "",
