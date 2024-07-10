@@ -1,9 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { log } from 'console';
 
-test.setTimeout(0);
-
-test('test', async ({ page }) => {
+test('Youtube paragraphs contains their categories', async ({ page }) => {
+  
+  test.setTimeout(0);
+  
   await page.goto('https://smmpanelka.com/app/?networkId=1');
   await expect(page.locator('#rootElement').getByText('Youtube', { exact: true })).toBeVisible({ timeout: 0 });
   await expect(page.locator('#rootElement').getByText('Youtube', { exact: true })).toHaveText('Youtube', ({ timeout: 0 }));

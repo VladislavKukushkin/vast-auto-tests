@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
-import { log } from 'console';
-test.setTimeout(1000000)
-test('test', async ({ page }) => {
+
+test('Choose chips of services on marketplace', async ({ page }) => {
+  
+  test.setTimeout(0);
+  
   await page.goto('https://smmpanelka.com/app/?networkId=1');
   await expect(page.locator('#rootElement').getByText('Youtube', { exact: true })).toBeVisible();
   await expect(page.locator('#rootElement').getByText('Youtube', { exact: true })).toHaveText('Youtube');

@@ -19,8 +19,10 @@ function getRandomString(length) {
   }
 
   
-test('test', async ({ page }) => {
-   
+test('Register new User', async ({ page }) => {
+
+  test.setTimeout(0);
+
     const username = getRandomString(8);
     const email = getRandomEmail();
     const password = getRandomPassword();

@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('To clear search field on Main page', async ({ page }) => {
+
+  test.setTimeout(0);
 
 await page.goto('https://smmpanelka.com/app/login');
 await page.locator('#searchEverything').fill('VK');

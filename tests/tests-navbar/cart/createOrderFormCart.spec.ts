@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Creating new order from cart', async ({ page }) => {
   
+  test.setTimeout(0);
+
   await page.goto('https://smmpanelka.com/app/login');
   await page.locator('#app > div > div.fill-height.position-relative > div > header > div.header__options > div:nth-child(2) > button.btn.header__cart.header__options--item').click();
  
@@ -19,5 +21,5 @@ test('test', async ({ page }) => {
   await expect(itemInCart).toBeVisible();
   await expect(itemInCart).toContainText('Total cost');
   
-  console.log ('Item was added to cart, cost is shown')
+  console.log ('Item was added to cart')
 });

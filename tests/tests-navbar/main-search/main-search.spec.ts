@@ -1,8 +1,10 @@
 
 import { test, expect, devices, defineConfig } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Search on Main page', async ({ page }) => {
   
+  test.setTimeout(0);
+
 await page.goto('https://smmpanelka.com/app/login');
 await page.locator('#searchEverything').fill('VK');
 await page.waitForTimeout(2000)

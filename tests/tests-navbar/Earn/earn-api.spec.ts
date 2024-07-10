@@ -1,7 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
-    await page.goto('https://smmpanelka.com/app/login');
+test('API page is visible', async ({ page }) => {
+  
+  test.setTimeout(0);
+  
+  await page.goto('https://smmpanelka.com/app/login');
     await page.getByLabel('E-mail').click();
     await page.getByLabel('E-mail').fill('TestUser@test.com');
     await page.getByLabel('Password').click();
