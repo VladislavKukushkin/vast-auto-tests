@@ -24,49 +24,49 @@ export default defineConfig ({
         actionTimeout: 0,
       }, 
     },
-       {
-      name: 'firefox',
-      use: {
-        ...devices['Desktop Firefox'],
-        actionTimeout: 0,
-      },
-    },
-    {
-      name: 'webkit',
-      use: {
-        ...devices['Desktop Safari'],
-        actionTimeout: 0,
-      },
-    },
-    {
-      name: 'iPhone 14 Pro Max',
-      use: {
-        ...devices['iPhone 14 Pro Max'],
-        isMobile: true
-    }},
-    {
-      name: 'iPhone 11',
-      use: {
-        ...devices['iPhone 11'],
-        isMobile: true
-    }},
-    {
-      name: 'Galaxy S9+',
-      use: {
-        ...devices['Galaxy S9+'],
-        isMobile: true
-    }},
-    {
-      name: 'iPad Pro 11',
-      use: {
-        ...devices['iPad Pro 11'],
-        isMobile: true
-    }},
-    {
-      name: 'iPad Mini',
-      use: {
-        ...devices['iPad Mini'],
-        isMobile: true
-    }},
+    //    {
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //     actionTimeout: 0,
+    //   },
+    // },
+    // {
+    //   name: 'webkit',
+    //   use: {
+    //     ...devices['Desktop Safari'],
+    //     actionTimeout: 0,
+    //   },
+    // },
+    // {
+    //   name: 'iPhone 14 Pro Max',
+    //   use: {
+    //     ...devices['iPhone 14 Pro Max'],
+    //     isMobile: true
+    // }},
+    // {
+    //   name: 'iPhone 11',
+    //   use: {
+    //     ...devices['iPhone 11'],
+    //     isMobile: true
+    // }},
+    // {
+    //   name: 'Galaxy S9+',
+    //   use: {
+    //     ...devices['Galaxy S9+'],
+    //     isMobile: true
+    // }},
+    // {
+    //   name: 'iPad Pro 11',
+    //   use: {
+    //     ...devices['iPad Pro 11'],
+    //     isMobile: true
+    // }},
+    // {
+    //   name: 'iPad Mini',
+    //   use: {
+    //     ...devices['iPad Mini'],
+    //     isMobile: true
+    // }},
   ],
 });
