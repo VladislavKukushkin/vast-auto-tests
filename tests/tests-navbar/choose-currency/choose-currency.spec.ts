@@ -2,7 +2,7 @@ import { test, expect, } from '@playwright/test';
 
 test('Choose currency', async ({ page }) => {
 
-  test.setTimeout(0);
+  test.setTimeout(120000);
 
 await page.goto(`https://smmpanelka.com/app/services/137505-rutube-followers-10kd-0-1h-30-days-refill`);
 await page.waitForTimeout(1000);

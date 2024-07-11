@@ -8,7 +8,7 @@ test('Add funds via Credit card', async ({ page }) => {
   // await page.locator('#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input').fill('testuser1337');
   // await page.locator('#passwordNext > div > button > span').click();
     // await page.waitForTimeout(10000);
-    test.setTimeout(0);
+    test.setTimeout(120000);
 
     await page.goto('https://smmpanelka.com/app/login');
     await page.getByLabel('E-mail').fill('TestUser@test.com');

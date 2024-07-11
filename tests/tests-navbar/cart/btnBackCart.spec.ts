@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('Button "Back" inside cart', async ({ page }) => {
 
-  test.setTimeout(0);
+  test.setTimeout(120000);
 
   await page.goto('https://smmpanelka.com/app/?networkId=1');
   await page.locator('#app > div > div.fill-height.position-relative > div > header > div.header__options > div:nth-child(2) > button.btn.header__cart.header__options--item').click();      

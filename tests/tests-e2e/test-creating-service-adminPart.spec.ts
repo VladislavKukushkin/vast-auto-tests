@@ -17,7 +17,7 @@ console.log("Created service name = ", randomName);
 
 test('Creating new service', async ({ page }) => {
   
-  test.setTimeout(0);
+  test.setTimeout(180000);
 
   await page.goto('https://vast-service-admin-client1.smm.rocks/login');
   await page.waitForTimeout(1000);

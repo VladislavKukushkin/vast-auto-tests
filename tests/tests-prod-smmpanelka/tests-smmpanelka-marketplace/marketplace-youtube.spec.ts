@@ -3,7 +3,7 @@ import { log } from 'console';
 
 test('Youtube paragraphs contains their categories', async ({ page }) => {
   
-  test.setTimeout(0);
+  test.setTimeout(120000);
   
   await page.goto('https://smmpanelka.com/app/?networkId=1');
   await expect(page.locator('#rootElement').getByText('Youtube', { exact: true })).toBeVisible({ timeout: 0 });

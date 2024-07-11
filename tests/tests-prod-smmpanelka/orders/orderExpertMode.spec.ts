@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('Create order using Expert mode', async ({ page }) => {
     
-    test.setTimeout(0);
+    test.setTimeout(120000);
 
     await page.goto('https://smmpanelka.com/app/orders/create?serviceSlug&url=&quantity=1000&networkId=12&serviceTypeId=84&serviceId=134713&isDripFeed=false&dripFeedQuantityStep=1&numberOfRuns=2&dripFeedMode=flat&dripFeedMinutes=60&type=expert');
     await page.waitForURL('');

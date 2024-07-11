@@ -21,7 +21,7 @@ function getRandomString(length) {
   
 test('Register new User', async ({ page }) => {
 
-  test.setTimeout(0);
+  test.setTimeout(120000);
 
     const username = getRandomString(8);
     const email = getRandomEmail();
