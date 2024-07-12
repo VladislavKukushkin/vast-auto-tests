@@ -17,6 +17,5 @@ test('Pay for order via Credit card', async ({ page }) => {
   await page.getByRole('button', { name: 'RUB' }).click({ timeout: 0 });
   await page.getByText('Credit / Debit card').click({ timeout: 0 });
   await page.getByRole('button', { name: 'BUY FOR $' }).click({ timeout: 0 });
-  await page.goto('https://checkout.stripe.com/c/pay/cs_live_a1fVxpEGwOwgPLc1GFZYAsdjo4PxbWAjT8laWnymh8OY4GZEYFdsxpwOjt#fidkdWxOYHwnPyd1blppbHNgWjA0SE9ha31GMlBEQktNQDJ8c3B%2FQ2RrZ2JjYTZIamBObnw8bzRVZDdSSDFvVmFOMHZJd2dHU09XYktnaUozSGh8a3BrUHRTfTNVfF9xPXNuSkJBQWRJcGpWNTVzTndhNEBHbCcpJ2hsYXYnP34nYnBsYSc%2FJ0tEJyknaHBsYSc%2FJ0tEJykndmxhJz8nS0QneCknZ2BxZHYnP15YKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSd3YGNgd3dgd0p3bGJsayc%2FJ21xcXV2PyoqdmhodWRrYGluZCtmamgneCUl');
-  await expect(page.getByText('Balance Replenishment for')).toBeVisible({ timeout: 0 });
+   await expect(page.getByTitle('Panvy LTD')).toBeVisible({ timeout: 0 });
 });

@@ -17,6 +17,5 @@ test('Pay for order via Perfect Money', async ({ page }) => {
   await page.getByRole('button', { name: 'RUB' }).click({ timeout: 0 });
   await page.getByText('Perfect Money').click({ timeout: 0});
   await page.getByRole('button', { name: 'BUY FOR $' }).click({ timeout: 0 });
-  await page.goto('https://perfectmoney.com/api/step1.asp');
   await expect(page.getByRole('heading', { name: 'Perfect Money' })).toBeVisible();
 });

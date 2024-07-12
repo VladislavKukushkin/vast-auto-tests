@@ -17,6 +17,5 @@ test('Pay for order via Crypto', async ({ page }) => {
   await page.getByRole('button', { name: 'RUB' }).click({ timeout: 0 });
   await page.getByText('Криптовалюта').click({ timeout: 0});
   await page.getByRole('button', { name: 'BUY FOR $' }).click({ timeout: 0 });
-  await page.goto('https://commerce.coinbase.com/checkout/2f9e6c49-c66b-4ba1-843a-fb591ac13db7');
-  await expect(page.getByRole('heading', { name: 'Invoice # SMM Panelka-' })).toBeVisible();
+  await expect(page.locator('#hosted-app > div > div > div > div.sc-TuwoP.bcAdSk > div > div > div:nth-child(1) > div.sc-ghsgMZ.dIQVlI')).toContainText('Invoice # SMM Panelka');
 });
