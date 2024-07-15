@@ -9,9 +9,8 @@ function getRandomString(length) {
   return result;
 }
 
-//export 
-const randomName = getRandomString(4);
-console.log("Created service name = ", randomName);
+const paymentServiceName = getRandomString(4);
+console.log("Created service name = ", paymentServiceName);
 
 
 
@@ -49,9 +48,9 @@ test('Creating new service', async ({ page }) => {
   await page.locator('[data-locator="input-auto-refill-max-drop-percent"]').fill('0.7');
   await page.locator('[data-locator="input-auto-refill-once-fill-percent"]').fill('0.5');
   await page.locator('[data-locator="input-auto-refill-max-total-refilled-percent"]').fill('1.0');
-  await page.locator('[data-locator="input-name-locale"]').fill(randomName);
-  await page.locator('[data-locator="input-meta-title-locale"]').fill(randomName)
-  await page.locator('[data-locator="input-meta-description-locale"]').fill(randomName);
+  await page.locator('[data-locator="input-name-locale"]').fill(paymentServiceName);
+  await page.locator('[data-locator="input-meta-title-locale"]').fill(paymentServiceName)
+  await page.locator('[data-locator="input-meta-description-locale"]').fill(paymentServiceName);
   await page.waitForTimeout(4000);
   await page.locator('#app > div > main > div > div > div.mx-auto.v-card.v-sheet.theme--light > div.v-card__text > div:nth-child(15) > div:nth-child(2) > div:nth-child(11) > div.d-flex.align-center.col-sm-8.col-12 > div > div > div > div > div.v-input--selection-controls__ripple')
   .click();
@@ -84,9 +83,9 @@ test('Creating new service', async ({ page }) => {
   await page.locator('#app > div > div.fill-height.position-relative > main > div > div.py-3.background.full-height > div > div > div > div.v-card__text.pa-md-8.pt-md-6 > div.layout.pa-3.justify-end.pb-8.pb-md-4 > nav > ul')
     .first().click();
   await page.waitForTimeout(10000);
-  await expect(page.getByText(randomName)).toBeVisible();
-  await page.getByText(randomName).click();
-  await expect(page.getByText(randomName)).toBeVisible();
+  await expect(page.getByText(paymentServiceName)).toBeVisible();
+  await page.getByText(paymentServiceName).click();
+  await expect(page.getByText(paymentServiceName)).toBeVisible();
   await page.waitForTimeout(1000)
 
   console.log('Service was created successfully on Admin site and shown on LK')
